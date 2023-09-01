@@ -55,8 +55,8 @@ IS_STREAM = bool(STREAM_BIN and STREAM_URL)
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omegalinks.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '1f961f5443721e5ac64a12e8f32508ff66db547f')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'mplaylink.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'f7ef7986018b2268e3edeae0a7de649059b3e557')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
